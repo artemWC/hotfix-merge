@@ -11,7 +11,7 @@
     ],
     "homepage": "https://github.com/artemwc/hotfixmerge",
     "keywords": ["Laravel", "HotfixMerge"],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "illuminate/support": "~5"
     },
