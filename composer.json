@@ -1,0 +1,43 @@
+{
+    "name": "artemwc/hotfixmerge",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Artem",
+            "email": "artem.siminenko@gmail.com",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/artemwc/hotfixmerge",
+    "keywords": ["Laravel", "HotfixMerge"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "artemWC\\HotfixMerge\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "artemWC\\HotfixMerge\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "artemWC\\HotfixMerge\\HotfixMergeServiceProvider"
+            ],
+            "aliases": {
+                "HotfixMerge": "artemWC\\HotfixMerge\\Facades\\HotfixMerge"
+            }
+        }
+    }
+}
